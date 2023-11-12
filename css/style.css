@@ -1095,6 +1095,10 @@ h6 {
   }
 
   .footer__container {
+    padding-bottom: 1.875rem;
+  }
+
+  .footer__container {
     -webkit-column-gap: 5.3125rem;
        -moz-column-gap: 5.3125rem;
             column-gap: 5.3125rem;
@@ -1164,10 +1168,6 @@ h6 {
     -webkit-column-gap: 1.75rem;
        -moz-column-gap: 1.75rem;
             column-gap: 1.75rem;
-  }
-
-  .footer__container {
-    padding-bottom: 1.875rem;
   }
 
   .footer__contacts {
@@ -1376,10 +1376,6 @@ h6 {
     -webkit-column-gap: 1.25rem;
        -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
-  }
-
-  .footer__container {
-    padding-bottom: 1.25rem;
   }
 
   .footer__contacts {
@@ -1788,6 +1784,10 @@ h6 {
   .footer__container {
     padding-top: 4.8125rem;
   }
+
+  .footer__container {
+    padding-bottom: 5rem;
+  }
 }
 
 @media (max-width: 34.6875em) {
@@ -2052,18 +2052,6 @@ h6 {
       -webkit-column-gap: calc(1.25rem + 0.5 * (100vw - 20rem) / 53.125);
          -moz-column-gap: calc(1.25rem + 0.5 * (100vw - 20rem) / 53.125);
               column-gap: calc(1.25rem + 0.5 * (100vw - 20rem) / 53.125);
-    }
-}
-
-@supports (padding-bottom: clamp( 1.25rem , 1.0147058824rem  +  1.1764705882vw , 1.875rem )) {
-    .footer__container {
-      padding-bottom: clamp( 1.25rem , 1.0147058824rem  +  1.1764705882vw , 1.875rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 1.25rem , 1.0147058824rem  +  1.1764705882vw , 1.875rem )) {
-    .footer__container {
-      padding-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 53.125);
     }
 }
 
@@ -2386,6 +2374,18 @@ h6 {
 @supports not (padding-top: clamp( 1.3125rem , 8.1213737201rem  +  -9.5563139932vw , 4.8125rem )) {
     .footer__container {
       padding-top: calc(4.8125rem + -3.5 * (100vw - 34.625rem) / 36.625);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 7.9543515358rem  +  -8.5324232082vw , 5rem )) {
+    .footer__container {
+      padding-bottom: clamp( 1.875rem , 7.9543515358rem  +  -8.5324232082vw , 5rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 7.9543515358rem  +  -8.5324232082vw , 5rem )) {
+    .footer__container {
+      padding-bottom: calc(5rem + -3.125 * (100vw - 34.625rem) / 36.625);
     }
 }
 }
